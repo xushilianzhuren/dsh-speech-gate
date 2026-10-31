@@ -1,0 +1,11 @@
+# Agent言语引擎 · 插件化
+# 旧形态=会话开场手跑 scripts/Agent言语引擎.py（靠记得，漏跑即回魂）。
+# 新形态=本插件把「Agent言语令」挂成系统提示常驻区块，另供一个过闸工具；
+# 会话一开口它就在场，与模型记不记得无关。
+- insert:
+    - id: ql-speech
+      name: 'dsh-speech-gate'
+      config:
+        enabled: true
+        order: 60
+        tool: true
